@@ -49,8 +49,12 @@ function showMessage(response) {
     document.getElementById("no-button").remove();
 
     // Update text content, show message, and change image source to "dance.gif"
+    const yesMessage1 = document.getElementById("question1");
+    yesMessage1.textContent = "Japanese food then 10 things I hate about you at the ritz????";
+    yesMessage1.style.display = "block";
+    yesMessage1.style.fontStyle = "normal";
     const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "LESGOOO see you on the 14th 😍😍😍";
+    yesMessage.textContent = "See you on the 14th 😍😍😍";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/dance-dog.gif";
